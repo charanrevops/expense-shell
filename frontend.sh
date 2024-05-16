@@ -1,7 +1,7 @@
 echo -e "\e[35mInstalling Nginx\e[0m"
 dnf install nginx -y &>>/tmp/expense.log
 echo exit status - $?
-echo "\e[35mexit status - $?\e[0m" &>>/tmp/expense.log
+echo "\e[35mexit status\e[0m"- $? &>>/tmp/expense.log
 
 echo -e "\e[35mCopy Expense Config File\e[0m"
 cp expense.conf /etc/nginx/default.d/expense.conf &>>/tmp/expense.log
