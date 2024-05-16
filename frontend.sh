@@ -29,4 +29,4 @@ echo -e "\e[35mRestart Service\e[0m"
 systemctl enable nginx &>>/tmp/expense.log
 systemctl restart nginx &>>/tmp/expense.log
 echo exit status - $?
-echo exit status - $? &>>/tmp/expense.log
+echo "\e[35mexit status\e[0m" - $? &>>/tmp/expense.log
