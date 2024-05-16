@@ -17,12 +17,11 @@ echo -e "\e[35mDownload Frontend Content\e[0m"
 curl -o /tmp/frontend.zip https://expense-artifacts.s3.amazonaws.com/expense-frontend-v2.zip &>>/tmp/expense.log
 echo exit status - $?
 cd /usr/share/nginx/html
-echo exit status - $? &>>/tmp/expense.log
 echo -e "\e[35mExit Status\e[0m-$?" &>>/tmp/expense.log
 
 echo -e "\e[35mExtract Content\e[0m"
 unzip /tmp/frontend.zip &>>/tmp/expense.log
-echo exit status - $? &>>/tmp/expense.log
+echo -e "\e[35mExit Status\e[0m" - $? &>>/tmp/expense.log
 
 echo -e "\e[35mRestart Service\e[0m"
 systemctl enable nginx &>>/tmp/expense.log
