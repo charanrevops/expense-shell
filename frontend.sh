@@ -21,6 +21,7 @@ echo -e "\e[35mExit Status\e[0m-$?" &>>/tmp/expense.log
 
 echo -e "\e[35mExtract Content\e[0m"
 unzip /tmp/frontend.zip &>>/tmp/expense.log
+echo exit status - $?
 echo -e "\e[35mExit Status\e[0m" - $? &>>/tmp/expense.log
 
 echo -e "\e[35mRestart Service\e[0m"
