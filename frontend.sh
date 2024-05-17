@@ -1,4 +1,5 @@
 rm -f /tmp/expense.log
+
 echo -e "\e[35mInstalling Nginx\e[0m"
 dnf install nginx -y &>>/tmp/expense.log
 echo exit status - $?
