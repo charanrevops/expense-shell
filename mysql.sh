@@ -1,3 +1,5 @@
+source common.sh
+
 rm -f /tmp/expense.log
 
 
