@@ -1,3 +1,6 @@
+rm -f /tmp/expense.log
+
+
 echo -e "\e[35mInstalling mysql server\e[0m"
 dnf install mysql-server -y
 echo exit status -$?

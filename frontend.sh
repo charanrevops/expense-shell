@@ -1,11 +1,10 @@
+source common.sh
+
 rm -f /tmp/expense.log
 
 
-HEADING()
-{
-  echo -e "\e[33m$*\e[0m"
 
-}
+
 HEADING  Nginx
 dnf install nginx -y &>>/tmp/expense.log
 echo exit status - $?
