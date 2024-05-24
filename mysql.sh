@@ -4,6 +4,7 @@ rm -f /tmp/expense.log
 
 if [ -z "$1" ]; then
   echo Input MySQL password is missing
+fi
 
 HEADING Installing mysql server
 dnf install mysql-server -y
