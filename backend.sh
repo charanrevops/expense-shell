@@ -61,7 +61,7 @@ STAT $?
 
 
 HEADING Load Schema
-mysql -h 172.31.32.211 -uroot -pExpenseApp@1 < /app/schema/backend.sql
+mysql -h localhost -uroot -pExpenseApp@1 < /app/schema/backend.sql
 STAT $?
 
 
