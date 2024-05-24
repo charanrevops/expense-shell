@@ -8,7 +8,7 @@ if [ -z "$1" ]; then
 fi
 
 HEADING Installing mysql server
-dnf install mysql-server -y
+dnf install mysql-server -y &>>/tmp/expense.log
 if [ $? -eq 0 ];then
   echo SUCCESS
 else
@@ -17,8 +17,8 @@ else
 fi
 
 HEADING Enabling and starting mysql server
-systemctl enable mysqld
-systemctl start mysqld
+systemctl enable mysqld &>>/tmp/expense.log
+systemctl start mysqld &>>/tmp/expense.log
 if [ $? -eq 0 ];then
   echo SUCCESS
 else
@@ -27,7 +27,7 @@ else
 fi
 
 HEADING Installatioon and password setting of mysql server
-mysql_secure_installation --set-root-pass $1
+mysql_secure_installation --set-root-pass $1 &>>/tmp/expense.log
 if [ $? -eq 0 ];then
   echo SUCCESS
 else
