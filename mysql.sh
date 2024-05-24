@@ -2,6 +2,9 @@ source common.sh
 
 rm -f /tmp/expense.log
 
+if [ -z "$1"]
+
+
 
 HEADING Installing mysql server
 dnf install mysql-server -y
