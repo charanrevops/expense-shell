@@ -7,16 +7,7 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
-STAT()
-{
 
-  if [ $? -eq 0 ];then
-    echo SUCCESS
-  else
-    echo FAILURE
-    exit 2
-  fi
-}
 
 HEADING Installing mysql server
 dnf install mysql-server -y &>>/tmp/expense.log
