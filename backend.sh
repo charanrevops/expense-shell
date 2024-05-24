@@ -1,11 +1,11 @@
 source common.sh
 rm -f /tmp/expense.log
 
-HEADING Disbale NodeJS Default Version
+HEADING Disble NodeJS Default Version
 dnf module disable nodejs -y &>>/tmp/expense.log
 STAT $?
 
-HEADING Disbale NodeJS Default Version
+HEADING Enable NodeJS Default Version
 dnf module enable nodejs:20 -y &>>/tmp/expense.log
 STAT $?
 
@@ -34,6 +34,7 @@ STAT $?
 HEADING Download Backend code
 curl -o /tmp/backend.zip https://expense-artifacts.s3.amazonaws.com/expense-backend-v2.zip &>>/tmp/expense.log
 cd /app
+STAT $?
 
 HEADING Extract Backend Code
 unzip /tmp/backend.zip &>>/tmp/expense.log
