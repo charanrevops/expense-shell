@@ -29,6 +29,12 @@ HEADING SetUp Backend Service
 cp backend.service /etc/systemd/system/backend.service &>>/tmp/expense.log
 STAT $?
 
+
+HEADING Deleting Existing Application Directory
+rm -rf /app
+STAT $?
+
+
 HEADING Create Application Directory
 mkdir /app &>>/tmp/expense.log
 STAT $?

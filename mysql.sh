@@ -20,6 +20,6 @@ systemctl start mysqld &>>/tmp/expense.log
 STAT S?
 
 
-HEADING Installatioon and password setting of mysql server
+HEADING Installation and password setting of mysql server
 mysql_secure_installation --set-root-pass $1 &>>/tmp/expense.log
 STAT S?
