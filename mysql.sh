@@ -2,7 +2,8 @@ source common.sh
 
 rm -f /tmp/expense.log
 
-if [ -z "$1"]
+if [ -z "$1" ];then
+  echo Input MySQL password is missing
 
 
 
