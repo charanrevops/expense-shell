@@ -19,3 +19,4 @@ echo exit staus -$?
 HEADING Installatioon and password setting of mysql server
 mysql_secure_installation --set-root-pass $1
 echo exit staus -$?
+
