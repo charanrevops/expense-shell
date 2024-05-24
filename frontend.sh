@@ -35,5 +35,5 @@ echo -e "\e[35mExtract Content-Exit Status\e[0m" - $? &>>/tmp/expense.log
 HEADING Restart Service
 systemctl enable nginx &>>/tmp/expense.log
 systemctl restart nginx &>>/tmp/expense.log
-echo exit status -$?
+STAT -$?
 echo -e "\e[35mRestart Service-Exit Status\e[0m-$?" &>>/tmp/expense.log
