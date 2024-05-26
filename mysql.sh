@@ -22,4 +22,4 @@ STAT S?
 
 HEADING Installation and password setting of mysql server
 mysql_secure_installation --set-root-pass ExpenseApp@1 #&>>/tmp/expense.log
-#STAT S?
+STAT S?
